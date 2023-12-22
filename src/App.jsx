@@ -1,14 +1,17 @@
 import { useState } from "react";
 import { BrowserRouter as Router } from "react-router-dom";
 import "./App.css";
-import Navbar from "./components/nav/Navbar";
-import "bootstrap/dist/css/bootstrap.min.css";
+import Header from "./components/header/Header";
+import MyNavbar from "./components/nav/Navbar";
+import Footer from "./components/footer/Footer";
+// import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
   return (
     <Router>
-      <button className="btn btn-primary">Primary</button>
-      <Navbar />
+      <Header />
+      <MyNavbar />
+      <Footer />
     </Router>
   );
 }
