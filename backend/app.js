@@ -1,26 +1,26 @@
 // Import the express module
-const express = require("express");
-
+const express = require('express');
+ 
 // Import the dotenv module and call the config method to load the environment variables
-require("dotenv").config();
+require('dotenv').config();
 
 // Import the sanitizer module
-const sanitize = require("sanitize");
+const sanitize = require('sanitize');
 
 // Import the cors module
-const cors = require("cors");
+const cors = require('cors');
 
 // Set up the CORS options to allow requests from our front-end
 const corsOptions = {
   origin: process.env.FRONTEND_URL,
-  optionsSuccessStatus: 200,
+  optionsSuccessStatus: 200
 };
 
 // Create a variable to hold our port number
 const port = process.env.PORT;
 
 // Import the router
-const router = require("./routes");
+const router = require('./routes');
 
 // Create the webserver
 const app = express();
